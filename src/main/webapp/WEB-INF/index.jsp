@@ -38,7 +38,13 @@
 
 </table>
 	
+	<form id="shoppingList" action="addBongattuLintu" method="post">
+		<input name="laji" type="text" required placeholder="mikä lintu" autofocus />
+		<input name="paikka" type="text" required placeholder="missä nähty" autofocus />
+		<input name="pvm" type="text" required placeholder="koska nähty" autofocus />
 	
+		<input type="submit" value="Add" />
+	</form>	
 
 </body>
 </html>

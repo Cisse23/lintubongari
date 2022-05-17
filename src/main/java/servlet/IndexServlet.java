@@ -26,10 +26,8 @@ public class IndexServlet extends HttpServlet {
 		linnut.add(lintu2);
 		linnut.add(lintu3);
 
-		// pass the time string to the JSP page as an attribute
 		req.setAttribute("linnut", linnut);
 
-		// forward the request to the index.jsp page
 		req.getRequestDispatcher("/WEB-INF/index.jsp").forward(req, resp);
 	}
 }
