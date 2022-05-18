@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class Database {
-	private static final String URL = "jdbc:sqlite:D:\\Tietokanta\\lintuBongari.sqlite";
+	private static final String URL = "jdbc:sqlite:C:.\\lintuBongari.db";
 
 	public Connection connect() {
 		Connection conny = null;
