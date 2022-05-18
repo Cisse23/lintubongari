@@ -10,7 +10,7 @@ public interface BongattuLintuDAO {
 
 	public BongattuLintu getId(int id);
 
-	public boolean AddBongattuLintu(BongattuLintu lintu);
+	public boolean addBongattuLintu(BongattuLintu lintu);
 
 	public boolean removeBongattuLintu(int id);
 }

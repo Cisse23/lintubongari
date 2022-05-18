@@ -6,7 +6,8 @@ public class BongattuLintu {
 	private String bongattuPaikka;
 	private String bongattuPvm;
 
-	public BongattuLintu(String laji, String bongattuPaikka, String bongattuPvm) {
+	public BongattuLintu(int id, String laji, String bongattuPaikka, String bongattuPvm) {
+		this.id = id;
 		this.laji = laji;
 		this.bongattuPaikka = bongattuPaikka;
 		this.bongattuPvm = bongattuPvm;

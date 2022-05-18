@@ -33,17 +33,18 @@
 		<td>
 			<c:out value="${lintu.bongattuPvm }" />
 		</td>
+		<td><a href="deleteBongattuLintu?id=${lintu.getId() }">x</a></td>
 	</tr>
 </c:forEach>
 
 </table>
+	<h2>Lisää bongattuja lintuja:</h2>
+	<form id="" action="addBongattuLintu" method="post">
+		<input name="laji" type="text" required placeholder="mikä lintu" autofocus /><br>
+		<input name="paikka" type="text" required placeholder="missä nähty" autofocus /><br>
+		<input name="pvm" type="text" required placeholder="koska nähty" autofocus /><br>
 	
-	<form id="shoppingList" action="addBongattuLintu" method="post">
-		<input name="laji" type="text" required placeholder="mikä lintu" autofocus />
-		<input name="paikka" type="text" required placeholder="missä nähty" autofocus />
-		<input name="pvm" type="text" required placeholder="koska nähty" autofocus />
-	
-		<input type="submit" value="Add" />
+		<input type="submit" value="Lisää" />
 	</form>	
 
 </body>
