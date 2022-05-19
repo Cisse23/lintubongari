@@ -70,7 +70,10 @@ Sijainti                                | Tarkoitus
 [src/main/java/database/Database.java](src/main/java/database/Database.java)  | luokka yhteyden luomiseksi tietokantaan
 [src/main/java/database/JDBCBongattuLintu.java](src/main/java/database/JDBCBongattuLintu.java)  | JDBC-teknologiaa hyödyntävä luokka, joka toteuttaa BongattuLintuDAO-rajapinnan
 [src/main/java/launch/Main.java](src/main/java/launch/Main.java)        | Luokka Tomcat-palvelimen käynnistämiseksi
-[src/main/java/servlet/IndexServlet.java](src/main/java/servlet/IndexServlet.java) | Esimerkki HTTP-liikennettä tukevasta Java-luokasta
+[src/main/java/model/BongattuLintu.java](src/main/java/model/BongattuLintu.java)        | BongattuLintu -olio luokka
+[src/main/java/servlet/IndexServlet.java](src/main/java/servlet/IndexServlet.java) | HTTP-liikennettä tukeva Java-luokka, listaa bongatut linnut tietokannasta etusivulle
+[src/main/java/servlet/AddBongattuLintuServlet.java](src/main/java/servlet/AddBongattuLintuServlet.java) | HTTP-liikennettä tukeva Java-luokka, lisää bongatun linnun tietokantaan
+[src/main/java/servlet/DeleteBongattuLintuServlet.java](src/main/java/servlet/DeleteBongattuLintuServlet.java) | HTTP-liikennettä tukeva Java-luokka, poistaa bongatun linnun tietokannasta
 [src/main/webapp](src/main/webapp)                                      | Hakemisto staattisille tiedostoille (css, kuvat, JS)
 [src/main/webapp/WEB-INF](src/main/webapp/WEB-INF)                      | Erityinen hakemisto, jonne on estetty suora pääsy selaimilta ¹
 [src/main/webapp/WEB-INF/index.jsp](src/main/webapp/WEB-INF/index.jsp)  | IndexServlet-luokan käyttämä sivupohja
