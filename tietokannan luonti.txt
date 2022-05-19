@@ -1,7 +1,0 @@
-CREATE TABLE "bongattu_lintu" (
-	"id"	INTEGER,
-	"laji"	TEXT,
-	"paikka"	TEXT,
-	"pvm"	TEXT,
-	PRIMARY KEY("id")
-)
