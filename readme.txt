@@ -1,3 +1,6 @@
+Lintubongari:
+http://localhost:8080/lintubongari
+
 Tämä harjoitustyö on toteutettu osana Haaga-Helian Ohjelmointi 2 -kurssia.
 Harjoitustyön tavoitteena oli luoda yksinkertainen verkkosovellus joka
 -käsittelee käyttäjältä saatua dataa servlettien avulla ja välittää datan servletiltä käyttöliittymälle.
@@ -8,9 +11,6 @@ Harjoitustyön aiheena on tietokantapohjainen verkkosivu, jolle voidaan kirjata 
 kurssin oppimistavoitteissa ja tehtävän arvioinnissa tyyleillä ei ole painoarvoa.
 
 Projektin pohjana on käytetty: https://github.com/ohjelmointi2/embedded-tomcat-template
-
-Lintubongari:
-http://localhost:8080/lintubongari
 
 GitHub:
 https://github.com/Cisse23/lintubongari
