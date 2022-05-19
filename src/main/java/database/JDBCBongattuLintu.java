@@ -73,8 +73,23 @@ public class JDBCBongattuLintu implements BongattuLintuDAO {
 
 	@Override
 	public boolean removeBongattuLintu(int id) {
-		// TODO: lisää removeBongattuLintu
-		return false;
+		try {
+			PreparedStatement query = db.connect().prepareStatement("DELETE FROM \"bongattu_lintu\" WHERE id = ?");
+			query.setInt(1, id);
+			int records = query.executeUpdate();
+			System.out.println("Succesfully removed " + records + " BongattuLintu");
+
+			query.close();
+			db.connect().close();
+
+			return true;
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			System.out.println("Failed to remove BongattuLintu");
+			return false;
+		}
+
 	}
 
 }

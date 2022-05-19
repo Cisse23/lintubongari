@@ -30,11 +30,8 @@ public class AddBongattuLintuServlet extends HttpServlet {
 		dao.addBongattuLintu(lintu);
 
 		System.out.println("Adding: " + laji + " " + paikka + " " + pvm);
-		// TODO: lisää BongattuLintu tietokantaan
 
-		// TODO: Uudelleenohjaus etusivulle
-		// req.getRequestDispatcher("/WEB-INF/index.jsp").forward(req, resp);
-		// resp.sendRedirect("/WEB-INF/index.jsp");
+		resp.sendRedirect("lintubongari");
 
 	}
 }
